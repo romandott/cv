@@ -1,0 +1,140 @@
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Tereshchenko Roman}} & \textbf{\LARGE{Angular Developer}}\\
+  Email: \href{mailto:}{welond.21@gmail.com} \\
+  \text{Mobile:~~~+38-063-537-13-24} \\
+\end{tabular*}
+
+%----------SUMMARY-----------------
+
+\section{Summary}
+    \hspace{10pt}{6 years experience in web development. Designing and creating angular applications, libraries. Creation of REST, WebSockets APIs. Code reviewing and development process enhancements, mentorship.}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Transport University}{Kiev, Ukraine}
+      {Bachelor of Computer Science}{2013 - 2017}
+    \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~~~Python, TypeScript, JavaScript, SQL, Bash, HTML, CSS, SCSS}
+	\resumeSubItem{Frameworks}{~~~~~~NestJs, Angular, Django, Flask}
+	\resumeSubItem{Technologies}{~~~~~Django rest framework, Akita, Webpack, REST API, WebSocket, Jest, NodeJS}
+	\resumeSubItem{Practices}{~~~~~~~~~~~OOP, TDD, Redux, DDD, SMACSS, SOLID, DRY, System Design, OOP Patterns, SemVer, TBD, GitFlow, \\ ~~~~~~~~~~~~~~~~~~~~~~~~~~Agile, Scrum, UML}
+	\resumeSubItem{Tools}{~~~~~~~~~~~~~~~~Docker, GIT, PostgreSQL, Jenkins, Redis, WebStorm, PyCharm, Nx, Jira}
+	\resumeSubItem{Platforms}{~~~~~~~~~Linux, Web, Windows}
+	\resumeSubItem{Soft Skills}{~~~~~~~~Time Management, Problem-solving skills and critical thinking, Communication, Self-awareness, \\ ~~~~~~~~~~~~~~~~~~~~~~~~~~Self-learning, Accountability}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{ENESTECH software}{Remote/Office}
+    {Angular Developer (Full-time)}{Jan 2017 - Jul 2021}
+    \resumeItemListStart
+        \resumeItem{Angular app development}
+        {Design and implementation of several angular apps such as CRM app for managing computer club (user management, payments, reservations, monitoring), an application for computer club clients to run games, applications, etc.}
+        \resumeItem{Angular components library}
+        {Design and implementation of an UI library based on @angular/cdk. Which we used to build all of our apps}
+        \resumeItem{SCSS library}
+        {Design and implementation of a scss library using SMACSS methodology}
+        \resumeItem{Django app development}{Implementation of REST/WebSocket apis for angular apps}
+    \resumeItemListEnd
+    \resumeSubheading
+	{Terrasoft (Creatio)}{Remote}
+	{Angular Developer (Full-time)}{Jul 2021 -  Present}
+	\resumeItemListStart
+        \resumeItem{Angular app development}
+          {Integration of components into MVVM based angular applications (Interface Designer, the app for rendering designed applications)}
+        \resumeItem{Angular components library}
+          {Design and implementation of UI components and methods of its configuration, integrations and extensions by the clients}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------LANGUAGES-----------------
+
+\section{Languages}
+	\resumeSubHeadingListStart
+    	\resumeSubItem{Russian}{~~native}
+    	\resumeSubItem{Ukranian}{native}
+    	\resumeSubItem{English}{~~~upper-intermediate}
+	\resumeSubHeadingListEnd
+
+\end{document}
